@@ -3,7 +3,6 @@ package Beginner_Coder;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.Arrays;
 
 public class 도형만들기1_1339_문자삼각형2_틀림 {
 	public static void main(String[] args) throws IOException {
