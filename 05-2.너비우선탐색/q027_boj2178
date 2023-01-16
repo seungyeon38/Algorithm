@@ -15,46 +15,28 @@ public class q027_boj2178 {
 		
 		N = Integer.parseInt(st.nextToken()); // 100  
 		M = Integer.parseInt(st.nextToken()); // 100 
-		int N_2 = N+2;
-		int M_2 = M+2;
 		
-		matrix = new char[N_2][M_2];
+		matrix = new char[N][M];
 		
-		for(int i=0; i<N_2; i++) {
+		for(int i=0; i<N; i++) {
 			Arrays.fill(matrix[i], '0');
 		}
 		
-		dist = new int[N_2][M_2];
+		dist = new int[N][M];
 		
-		for(int i=0; i<N_2; i++) {
+		for(int i=0; i<N; i++) {
 			Arrays.fill(dist[i], -1);
 		}
 		
-		for(int r=1; r<=N; r++) {
+		for(int r=0; r<N; r++) {
 			char[] c_arr = br.readLine().toCharArray();
 			
-			for(int c=1; c<=M; c++) {
-				matrix[r][c] = c_arr[c-1];
+			for(int c=0; c<M; c++) {
+				matrix[r][c] = c_arr[c];
 			}
 		}
-				
-//		for(int i=0; i<N_2; i++) {
-//			for(int j=0; j<M_2; j++) {
-//				System.out.print(matrix[i][j]);
-//			}
-//			System.out.println();
-//		}
 		
-		bfs(1, 1);
-		
-		System.out.println();
-		
-		for(int i=0; i<N_2; i++) {
-			for(int j=0; j<M_2; j++) {
-				System.out.print(dist[i][j]+" ");
-			}
-			System.out.println();
-		}
+		bfs(0, 0);
 	}
 	
 	public static void bfs(int sr, int sc) {
@@ -69,7 +51,7 @@ public class q027_boj2178 {
 				int nr = p[0] + dir[i][0];
 				int nc = p[1] + dir[i][1];
 				
-				if(nr>0 && nr<=N && nc>0 && nc<=M) {
+				if(nr>=0 && nr<N && nc>=0 && nc<M) {
 					if(matrix[nr][nc] == '1' && dist[nr][nc] == -1) {
 						queue.offer(new int[] {nr, nc});
 						
@@ -79,6 +61,6 @@ public class q027_boj2178 {
 			}
 		}
 		
-		System.out.println(dist[N][M]);
+		System.out.println(dist[N-1][M-1]);
 	}
 }
