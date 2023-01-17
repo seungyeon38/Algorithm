@@ -34,9 +34,7 @@ public class q028_boj1167{
 				e = Integer.parseInt(st.nextToken());
 			}
 		}
-		
-		int result = 0;
-		
+			
 		dfs(new Node(1, 0), 0);
 		
 		Arrays.fill(visited, false);
@@ -44,10 +42,8 @@ public class q028_boj1167{
 		max = 0; 
 	
 		dfs(new Node(max_idx, 0), 0);
-		
-		result += max; 
-		
-		System.out.println(result);
+				
+		System.out.println(max);
 	}
 
 	public static void dfs(Node n, int weight) {
