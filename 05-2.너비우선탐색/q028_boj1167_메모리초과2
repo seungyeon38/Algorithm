@@ -38,17 +38,6 @@ public class q028_boj1167_메모리초과2{
 			}
 		}
 		
-//		for(int i=0; i<=V; i++) {
-//			for(int j=0; j<=V; j++) {
-//				System.out.print(matrix[i][j]+" ");
-//			}
-//			System.out.println();
-//		}
-//		System.out.println();
-
-		
-		int result = 0;
-		
 		dfs(1, 0);
 		
 		Arrays.fill(visited, false);
@@ -56,10 +45,8 @@ public class q028_boj1167_메모리초과2{
 		max = 0; 
 	
 		dfs(max_idx, 0);
-		
-		result += max; 
-		
-		System.out.println(result);
+				
+		System.out.println(max);
 	}
 
 	public static void dfs(int n, int weight) {
