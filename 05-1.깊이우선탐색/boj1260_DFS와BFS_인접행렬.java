@@ -28,7 +28,8 @@ public class boj1260_DFS와BFS_인접행렬 {
 		}
 		
 		sb = new StringBuilder();
-		dfs2(V, new boolean[N+1]);
+		dfs(V);
+//		dfs2(V, new boolean[N+1]);
 		sb.append("\n");
 		bfs(V);
 		System.out.println(sb.toString());
@@ -39,16 +40,17 @@ public class boj1260_DFS와BFS_인접행렬 {
 		boolean[] visited = new boolean[N+1];
 		
 		stack.push(s);
-		visited[s] = true;
 		
 		while(!stack.isEmpty()) {
-			int n = stack.pop();
-			sb.append(n).append(" ");
+			int n = stack.pop();					
+			if(!visited[n]) {
+				visited[n] = true;
+				sb.append(n).append(" ");
+			}
 			
-			for(int i=1; i<=N; i++) {
+			for(int i=N; i>0; i--) {
 				if(adjMatrix[n][i] && !visited[i]) {
 					stack.push(i);
-					visited[i] = true;
 				}
 			}
 		}
@@ -82,13 +84,6 @@ public class boj1260_DFS와BFS_인접행렬 {
 					visited[i] = true;
 				}
 			}
-			
-//			for(int temp : arr[n]) {
-//				if(!visited[temp]) {
-//					queue.offer(temp);
-//					visited[temp] = true;
-//				}
-//			}
 		}
 	}
 }
