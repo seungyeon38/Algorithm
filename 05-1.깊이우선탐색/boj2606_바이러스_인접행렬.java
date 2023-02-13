@@ -3,7 +3,7 @@ package Algorithm;
 import java.io.*;
 import java.util.*;
 
-public class boj2606_바이러스 {
+public class boj2606_바이러스_인접행렬 {
 	static int N, M;
 	static boolean[][] grid;
 	static boolean[] visited;
