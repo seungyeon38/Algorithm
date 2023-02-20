@@ -3,7 +3,7 @@ package class3;
 import java.util.*;
 import java.io.*;
 
-public class boj1074_Z_재귀 {
+public class boj1074_Z_분할정복_재귀 {
 	static int N, r, c;
 	public static void main(String[] args) throws Exception{
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
