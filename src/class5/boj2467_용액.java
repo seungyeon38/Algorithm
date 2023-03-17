@@ -1,4 +1,4 @@
-package class4;
+package class5;
 
 import java.util.*;
 import java.io.*;
