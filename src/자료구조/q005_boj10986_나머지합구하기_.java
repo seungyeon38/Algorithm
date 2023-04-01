@@ -3,7 +3,7 @@ package 자료구조;
 import java.util.*;
 import java.io.*;
 
-public class q005_boj10986_나머지합구하기 {
+public class q005_boj10986_나머지합구하기_ {
 	public static void main(String[] args) throws Exception{
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		
