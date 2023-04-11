@@ -1,4 +1,4 @@
-package 자료구조;
+package 탐색;
 
 import java.util.*;
 import java.io.*;
