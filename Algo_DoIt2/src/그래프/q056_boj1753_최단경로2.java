@@ -3,7 +3,7 @@ package 그래프;
 import java.util.*;
 import java.io.*;
 
-public class q956_boj1753_최단경로2 {
+public class q056_boj1753_최단경로2 {
 	public static void main(String[] args) throws Exception{
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		
