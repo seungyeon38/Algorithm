@@ -3,7 +3,7 @@ package 트리;
 import java.util.*;
 import java.io.*;
 
-public class q068_boj1068_트리 {
+public class q068_boj1068_트리_ {
 	static boolean[] visited; 
 	static ArrayList<Integer>[] adj_list;
 	static int result; 
