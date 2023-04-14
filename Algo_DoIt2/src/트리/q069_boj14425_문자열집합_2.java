@@ -3,7 +3,7 @@ package 트리;
 import java.util.*;
 import java.io.*;
 
-public class q069_boj14425_문자열집합2 {
+public class q069_boj14425_문자열집합_2 {
 	public static void main(String[] args) throws Exception{
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		
