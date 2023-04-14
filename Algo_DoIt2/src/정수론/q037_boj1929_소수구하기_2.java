@@ -3,7 +3,7 @@ package 정수론;
 import java.util.*;
 import java.io.*;
 
-public class q037_boj1929_소수구하기2 {
+public class q037_boj1929_소수구하기_2 {
 	public static void main(String[] args) throws Exception{
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		
