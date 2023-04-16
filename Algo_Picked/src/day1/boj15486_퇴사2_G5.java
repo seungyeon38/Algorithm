@@ -3,7 +3,7 @@ package day1;
 import java.util.*;
 import java.io.*;
 
-public class boj15486_퇴사2 {
+public class boj15486_퇴사2_G5 {
 	public static void main(String[] args) throws Exception{
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		
