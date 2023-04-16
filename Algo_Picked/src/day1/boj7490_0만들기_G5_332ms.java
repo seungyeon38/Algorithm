@@ -3,7 +3,7 @@ package day1;
 import java.util.*;
 import java.io.*;
 
-public class boj7490_0만들기_G5 {
+public class boj7490_0만들기_G5_332ms {
 	static ArrayList<String> str_list; 
 	static int N; 
 	static StringBuilder sb;

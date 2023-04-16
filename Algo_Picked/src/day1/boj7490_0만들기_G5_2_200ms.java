@@ -3,7 +3,7 @@ package day1;
 import java.util.*;
 import java.io.*;
 
-public class boj7490_0만들기_G5_2 {	
+public class boj7490_0만들기_G5_2_200ms {	
 	static int N; 
 	static StringBuilder sb;
 
