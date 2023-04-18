@@ -3,7 +3,7 @@ package day2;
 import java.util.*;
 import java.io.*;
 
-public class boj18769_그리드네트워크_G4_2972ms {
+public class boj18769_그리드네트워크_G4_2972ms_MST {
 	static int[][][] parents; 
 	public static void main(String[] args) throws Exception{
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
