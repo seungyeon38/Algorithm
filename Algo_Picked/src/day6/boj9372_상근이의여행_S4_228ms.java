@@ -3,7 +3,7 @@ package day6;
 import java.util.*;
 import java.io.*;
 
-public class boj9372_상근이의여행_S4 {
+public class boj9372_상근이의여행_S4_228ms {
 	public static void main(String[] args) throws Exception{
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		
