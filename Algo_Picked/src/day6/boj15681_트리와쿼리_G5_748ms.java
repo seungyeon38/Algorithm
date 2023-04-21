@@ -3,9 +3,10 @@ package day6;
 import java.util.*;
 import java.io.*;
 
-public class boj15681_트리와쿼리_G5_924ms {
+public class boj15681_트리와쿼리_G5_748ms {
 	static ArrayList<Integer>[] adj_list, tree;
-	static int[] subtreeNum, parents; 
+	static int[] subtreeNum;
+
 	public static void main(String[] args) throws Exception{
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		
@@ -31,7 +32,6 @@ public class boj15681_트리와쿼리_G5_924ms {
 		}
 		
 		subtreeNum = new int[N+1];
-		parents = new int[N+1];
 		
 		makeTree(R, -1);
 		getSubtreeCnt(R);
@@ -50,7 +50,6 @@ public class boj15681_트리와쿼리_G5_924ms {
 			if(next == parent) continue; 
 			
 			tree[cur].add(next);
-			parents[next] = cur; 
 			makeTree(next, cur);
 		}
 	}
