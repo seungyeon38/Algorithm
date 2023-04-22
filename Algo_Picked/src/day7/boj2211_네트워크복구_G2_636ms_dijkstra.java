@@ -3,7 +3,7 @@ package day7;
 import java.util.*;
 import java.io.*;
 
-public class boj2211_네트워크복구_G2_636ms {
+public class boj2211_네트워크복구_G2_636ms_dijkstra {
 	static int N; 
 	static ArrayList<Node>[] adj_list;
 	static int[] dist; 
