@@ -3,7 +3,7 @@ package class4_2;
 import java.util.*;
 import java.io.*; 
 
-public class boj2263_트리의순회_G1_1956ms {
+public class boj2263_트리의순회_G1_1444ms {
 	static int n; 
 	static int[] inorder;
 	static int[] postorder;
@@ -32,11 +32,6 @@ public class boj2263_트리의순회_G1_1956ms {
 	}
 	
 	public static void calc(int in_s, int in_e, int post_s, int post_e) {
-		if(in_s == in_e) {
-			sb.append(inorder[in_s]).append(" ");
-			return; 
-		}
-		
 		// post_e 가 root 
 		int root = postorder[post_e];
 		sb.append(root).append(" ");
