@@ -32,8 +32,6 @@ public class boj2263_트리의순회_G1_1956ms {
 	}
 	
 	public static void calc(int in_s, int in_e, int post_s, int post_e) {
-//		System.out.println(in_s + ", " + in_e + ", " + post_s + ", " + post_e);
-
 		if(in_s == in_e) {
 			sb.append(inorder[in_s]).append(" ");
 			return; 
@@ -52,12 +50,12 @@ public class boj2263_트리의순회_G1_1956ms {
 			}
 		}
 		
-		// 왼쪽 개수 i-in_s
+		// 왼쪽 개수
 		int n = r_idx-in_s;
 		
-		// 왼 in_s ~ i-1, post_s ~ post_s+n-1
+		// 왼
 		if(in_s < r_idx) calc(in_s, r_idx-1, post_s, post_s+n-1);
-		// 오 i+1 ~ in_e, post_s+n ~ post_e-1
+		// 오
 		if(r_idx < in_e) calc(r_idx+1, in_e, post_s+n, post_e-1);
 	}
 }
