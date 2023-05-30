@@ -3,7 +3,7 @@ package class4_2;
 import java.util.*;
 import java.io.*;
 
-public class boj5639_이진검색트리_336ms {
+public class boj5639_이진검색트리_336ms_ {
 	static StringBuilder sb = new StringBuilder();
 	static ArrayList<Integer> list;
 
