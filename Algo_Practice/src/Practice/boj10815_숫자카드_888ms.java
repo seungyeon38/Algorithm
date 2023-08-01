@@ -23,11 +23,5 @@ public class boj10815_숫자카드_888ms {
 		}
 		
 		System.out.println(sb.toString());
-		
-		String str1 = "안녕";
-		Set<String> set = new HashSet<String>();
-		set.add(str1);
-		String str2 = "안녕";
-		System.out.println(set.contains(str2));
 	}
 }
