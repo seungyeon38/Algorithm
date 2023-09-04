@@ -1,7 +1,7 @@
 import java.util.*;
 import java.io.*;
 
-public class boj1806 {
+public class boj1806_부분합 {
 	public static void main(String[] args) throws Exception{
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		
