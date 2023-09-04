@@ -3,7 +3,7 @@ package a_자료구조;
 import java.util.*;
 import java.io.*;
 
-public class boj10986_나머지합_504ms {
+public class boj10986_나머지합_504ms_ {
 	public static void main(String[] args) throws Exception{
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		
