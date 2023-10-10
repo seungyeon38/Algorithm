@@ -1,7 +1,7 @@
 import java.util.*;
 import java.io.*;
 
-public class boj14499_주사위굴리기_132ms {
+public class boj14499_주사위굴리기_132ms_ {
 	public static void main(String[] args) throws Exception{
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		
